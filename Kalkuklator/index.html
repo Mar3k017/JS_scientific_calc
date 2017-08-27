@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8"/>
+		<title>KALKULATOR JAVACRIPT</title>
+		<meta name="description" content="MOJA WESJA KALKULATORA NAUKOWEGO W TECHNOLOGII JS, HTML5 I CSS3" />
+		<meta name="keywords" content="SCIENCE CALCULATOR" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<script src="scripts.js"></script>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+	</head>
+
+	<body>
+	
+		<div id="cintainer">
+			<div id="calculator">
+				<div id="functions"></div>
+				<div id="panel">
+					<form name="forma" id="form_1">
+						<input id='display' type='textbox' disabled>
+						<br>
+						<input type='button' id='keys' class='specialCharButtons' value='SIN' onclick='sin()'>
+						<input type='button' id='keys' class='specialCharButtons' value='COS' onclick='cos()'>
+						<input type='button' id='keys' class='specialCharButtons' value='TAN' onclick='tan()'>
+						<input type='button' id='keys' class='specialCharButtons' value='+/-' onclick='changeSign()'>
+						<br>
+						<input type='button' id='keys' class='specialCharButtons' value='&radic;' onclick='sqrt()'>
+						<input type='button' id='keys' class='specialCharButtons' value='x^y' onclick='might()'>
+						<input type='button' id='keys' class='specialCharButtons' value='LOG' onclick='log()'>
+						<input type='button' id='keys' class='specialCharButtons' value='ln10' onclick='ln10()'>
+						<br>
+						<input type='button' id='keys' class='specialCharButtons' value='&#8731;' onclick='cubeSqrt()'>
+						<input type='button' id='keys' class='specialCharButtons' value='MOD' onclick='addtoScreen("%")'>
+						<input type='button' id='keys' class='specialCharButtons' value='e' onclick='eulerNumber()'>
+						<input type='button' id='keys' class='specialCharButtons' style="font-size: 16px;" value='RND&uarr;' onclick='round()'>
+						<br>
+						<input type='button' id='keys' class='specialCharButtons' value='(' onclick='addtoScreen("(")'>
+						<input type='button' id='keys' class='specialCharButtons' value=')' onclick='addtoScreen(")")'>
+						<input type='button' id='keys' class='specialCharButtons' value='&#960' onclick='pi()'>
+						<input type='button' id='keys' class='specialCharButtons' value='n!' onclick='mathFactorial(display.value)'>
+						<br><br>
+						<input type='button' id='keys' class='charButtons red' value='C' onclick='addtoScreen("C")'>
+						<input type='button' id='keys' class='charButtons red' value='CE' onclick='backspace()'>
+						<input type='button' id='keys' class='charButtons' value='X^2' onclick='power()'>
+						<input type='button' id='keys' class='charButtons' value='+' onclick='addtoScreen("+")'>
+						<br>
+						<input type='button' id='keys' class='charButtons' value='9' onclick='addtoScreen("9")'>
+						<input type='button' id='keys' class='charButtons' value='8' onclick='addtoScreen("8")'>
+						<input type='button' id='keys' class='charButtons' value='7' onclick='addtoScreen("7")'>
+						<input type='button' id='keys' class='charButtons' value='-' onclick='addtoScreen("-")'>
+						<br>
+						<input type='button' id='keys' class='charButtons' value='6' onclick='addtoScreen("6")'>
+						<input type='button' id='keys' class='charButtons' value='5' onclick='addtoScreen("5")'>
+						<input type='button' id='keys' class='charButtons' value='4' onclick='addtoScreen("4")'>
+						<input type='button' id='keys' class='charButtons' value='&times;' onclick='addtoScreen("*")'>
+						<br>
+						<input type='button' id='keys' class='charButtons' value='3' onclick='addtoScreen("3")'>
+						<input type='button' id='keys' class='charButtons' value='2' onclick='addtoScreen("2")'>
+						<input type='button' id='keys' class='charButtons' value='1' onclick='addtoScreen("1")'>
+						<input type='button' id='keys' class='charButtons' value='&divide;' onclick='addtoScreen("/")'>
+						<br>
+						<input type='button' id='keys' class='charButtons' value='0' onclick='addtoScreen("0")'>
+						<input type='button' id='keys' class='charButtons' value='.' onclick='addtoScreen(".")'>
+						<!-- <input type='button' id='equal' class='charButtons' value='=' onclick='display.value=eval(display.value)'> -->
+						<input type='button' id='equal' class='charButtons' value='=' onclick='answer2()'>
+					</form>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
